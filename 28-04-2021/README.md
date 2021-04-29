@@ -24,6 +24,12 @@ npm start
 
 Ref
 
+6. Installera att CSS ramverk i detta fallat [Tachyjons](https://tachyons.io/)
+    - ctrl-c aör att avsluta utvecklingsevern
+    - 'npm install tachyons@4.12.0'
+    - 'npm start'
+    - importera Tachyjons
+
 
 
 
