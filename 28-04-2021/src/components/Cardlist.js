@@ -8,6 +8,25 @@ export default function CardList({ robots }) {
     )
 };
 
+function step3(robots) {
+    return (
+        <>
+            {
+                robots.map((user, i) => {
+                    return (
+                        <Card
+                            key={ i }
+                            id={ robots[i].id }
+                            name={ robots[i].name }
+                            email={ robots[i].email }
+                        />
+                    )
+                })
+            }
+        </>
+    )
+}
+
 // function step1(robots) {
 //     return (
 //         <>
@@ -37,21 +56,3 @@ export default function CardList({ robots }) {
 //     )
 // }
 
-function step3(robots) {
-    return (
-        <>
-            {
-                robots.map((user, i) => {
-                    return (
-                        <Card
-                            key={ i }
-                            id={ robots[i].id }
-                            name={ robots[i].name }
-                            email={ robots[i].email }
-                        />
-                    )
-                })
-            }
-        </>
-    )
-}
